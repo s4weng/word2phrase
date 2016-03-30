@@ -17,26 +17,19 @@
 
 package org.apache.spark.ml.feature
 
-import scala.util.matching.Regex
-import scala.util.Try
-
+//import scala.util.matching.Regex
 import org.apache.hadoop.fs.Path
-
 import org.apache.spark.annotation.{Experimental, Since}
-import org.apache.spark.ml.{Estimator, Model} // org.apache.spark.ml
-import org.apache.spark.ml.param.{DoubleParam, IntParam, ParamMap, Params} // above
-import org.apache.spark.ml.param.shared.{HasInputCol, HasOutputCol} // above
-import org.apache.spark.ml.util._ // above
-import org.apache.spark.mllib.linalg.{Vector, Vectors, VectorUDT} // org.apache.spark.mllib.linalg
-import org.apache.spark.mllib.stat.Statistics // org.apache.spark.mllib.stat
-import org.apache.spark.sql.{functions => f, Column, DataFrame} //org.apache.spark.sql
+import org.apache.spark.ml.param.shared.{HasInputCol, HasOutputCol}
+import org.apache.spark.ml.param.{DoubleParam, IntParam, ParamMap, Params}
+import org.apache.spark.ml.util._
+import org.apache.spark.ml.{Estimator, Model}
+import org.apache.spark.mllib.linalg.VectorUDT
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types.{StructField, StructType}
-import org.apache.spark.sql.SQLContext
-import org.apache.spark.SparkConf 
-import org.apache.spark.SparkContext
-import org.apache.spark.SparkContext._
+import org.apache.spark.sql.{DataFrame, functions => f}
 
+import scala.util.matching._
 
 /**
  * Params for [[Word2Phrase]] and [[Word2PhraseModel]].
@@ -46,29 +39,30 @@ private[feature] trait Word2PhraseParams extends Params with HasInputCol with Ha
   /**
    * delta
    * Default: 100
-   * @group param
+    *
+    * @group param
    */
   val delta: IntParam = new IntParam(this, "delta",
     "minimum word occurrence")
-
-  /** @group getParam */
-  def getDelta: Int = $(delta)
-
   /**
    * minimum number of occurrences before word is counted
    * Default: 5
-   * @group param
+    *
+    * @group param
    */
    val minWords: IntParam = new IntParam(this, "minWords",
     "minimum word count before it's counted")
-
   /**
    * threshold for score
    * Default: 0.00001
-   * @group param
+    *
+    * @group param
    */
   val threshold: DoubleParam = new DoubleParam(this, "threshold",
     "score threshold")
+
+  /** @group getParam */
+  def getDelta: Int = $(delta)
 
   /** @group getParam */
   def getThreshold: Double = $(threshold)
@@ -219,10 +213,14 @@ class Word2PhraseModel private[ml] (
 @Since("1.6.0")
 object Word2PhraseModel extends MLReadable[Word2PhraseModel] {
 
+  @Since("1.6.0")
+  override def read: MLReader[Word2PhraseModel] = new Word2PhraseModelReader
+
+  @Since("1.6.0")
+  override def load(path: String): Word2PhraseModel = super.load(path)
+
   private[Word2PhraseModel]
   class Word2PhraseModelWriter(instance: Word2PhraseModel) extends MLWriter {
-
-    private case class Data(bigramList: Seq[String])
 
     override protected def saveImpl(path: String): Unit = {
       DefaultParamsWriter.saveMetadata(instance, path, sc)
@@ -230,6 +228,8 @@ object Word2PhraseModel extends MLReadable[Word2PhraseModel] {
       val dataPath = new Path(path, "data").toString
       sqlContext.createDataFrame(Seq(data)).repartition(1).write.parquet(dataPath)
     }
+
+    private case class Data(bigramList: Seq[String])
   }
 
   private class Word2PhraseModelReader extends MLReader[Word2PhraseModel] {
@@ -246,10 +246,4 @@ object Word2PhraseModel extends MLReadable[Word2PhraseModel] {
       model
     }
   }
-
-  @Since("1.6.0")
-  override def read: MLReader[Word2PhraseModel] = new Word2PhraseModelReader
-
-  @Since("1.6.0")
-  override def load(path: String): Word2PhraseModel = super.load(path)
 }
