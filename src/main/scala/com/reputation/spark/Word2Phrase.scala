@@ -199,7 +199,7 @@ class Word2PhraseModel private[ml] (
   override def transform(dataset: DataFrame): DataFrame = {
 
     var mapBiGrams = udf((t: String) => bigramList.foldLeft(t){case (z, r) =>
-                                z.replaceAll("(?i)" + Regex.quote(r), r.split(" ").mkString("_"))})
+                                z.replaceAll("(?i)" + r, r.split(" ").mkString("_"))})
     dataset.withColumn($(outputCol), mapBiGrams(dataset($(inputCol))))
   }
 
