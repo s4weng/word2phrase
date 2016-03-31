@@ -11,7 +11,22 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>word2phrase</name>
-	 
+	<description>algorithm that turns n-grams to phrases</description>
+  	<url>github.com/s4weng/w2p</url>
+	<licenses>
+		<license>
+			<name>Apache Spark License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<scm>
+		<url>https://github.com/s4weng/w2p</url>
+		<connection>scm:git:git://github.com/s4weng/w2p.git</connection>
+		<developerConnection>scm:git:git@github.com:s4weng/w2p.git</developerConnection>
+	</scm>
+  	<developers>
+
 	<dependencies>
 		<dependency>
 		    <groupId>org.scala-lang</groupId>
