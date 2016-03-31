@@ -16,7 +16,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 	<licenses>
 		<license>
 			<name>Apache Spark License</name>
-			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<url>https://github.com/s4weng/w2p/blob/master/LICENSE</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
@@ -26,7 +26,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 		<developerConnection>scm:git:git@github.com:s4weng/w2p.git</developerConnection>
 	</scm>
   	<developers>
-
+		<developer>
+			<email>sweng@reputation.com</email>
+			<name>Steve Weng</name>
+			<url>https://github.com/s4weng</url>
+			<id>s4weng</id>
+		</developer>
+	</developers>
 	<dependencies>
 		<dependency>
 		    <groupId>org.scala-lang</groupId>
