@@ -139,7 +139,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 		    <plugin>
 			    <groupId>org.apache.maven.plugins</groupId>
 			    <artifactId>maven-release-plugin</artifactId>
-			    <version>${plugin.version}</version>
+			    <version>2.5.3</version>
 			    <configuration>
 			    <mavenExecutorId>forked-path</mavenExecutorId>
 			    <useReleaseProfile>false</useReleaseProfile>
