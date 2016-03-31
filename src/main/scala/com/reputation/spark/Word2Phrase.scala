@@ -15,8 +15,7 @@
  * limitations under the License.
  */
 
-//package org.apache.spark.ml.feature
-package com.reputation.spark
+package org.apache.spark.ml.feature
 
 import scala.util.matching.Regex
 import scala.util.Try
