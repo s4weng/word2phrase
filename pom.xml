@@ -1,14 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                    http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	     
 	<!-- The Basics -->
 	<groupId>com.reputation.spark</groupId>
 	<artifactId>word2phrase</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.1</version>
 	<packaging>jar</packaging>
 	<name>word2phrase</name>
 	<description>algorithm that turns n-grams to phrases</description>
@@ -26,7 +23,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 		<url>https://github.com/s4weng/w2p</url>
 		<connection>scm:git:git://github.com/s4weng/w2p.git</connection>
 		<developerConnection>scm:git:git@github.com:s4weng/w2p.git</developerConnection>
-	</scm>
+	  <tag>github.com/s4weng/w2p</tag>
+  </scm>
 
   	<developers>
 		<developer>
@@ -105,25 +103,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 			          </execution>
 			      </executions>
 			</plugin>
-			<plugin>
-		      <groupId>org.apache.maven.plugins</groupId>
-		      <artifactId>maven-javadoc-plugin</artifactId>
-		      <configuration>
-		          <quiet>true</quiet>
-		          <nonavbar>true</nonavbar>
-		          <notree>true</notree>
-		          <nocomment>true</nocomment>
-		          <nohelp>true</nohelp>
-		      </configuration>
-		      <executions>
-		          <execution>
-		              <id>attach-javadocs</id>
-		              <goals>
-		                  <goal>jar</goal>
-		              </goals>
-		          </execution>
-		      </executions>
-		    </plugin>
+			
 		    <plugin>
 		      <groupId>org.apache.maven.plugins</groupId>
 		      <artifactId>maven-source-plugin</artifactId>
