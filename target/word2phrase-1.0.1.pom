@@ -1,0 +1,238 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	     
+	<!-- The Basics -->
+	<groupId>com.reputation.spark</groupId>
+	<artifactId>word2phrase</artifactId>
+	<version>1.0.1</version>
+	<packaging>jar</packaging>
+	<name>word2phrase</name>
+	<description>algorithm that turns n-grams to phrases</description>
+  	<url>github.com/s4weng/w2p</url>
+
+	<licenses>
+		<license>
+			<name>Apache Spark License</name>
+			<url>https://github.com/s4weng/w2p/blob/master/LICENSE</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<url>https://github.com/s4weng/w2p</url>
+		<connection>scm:git:git://github.com/s4weng/w2p.git</connection>
+		<developerConnection>scm:git:git@github.com:s4weng/w2p.git</developerConnection>
+	  <tag>github.com/s4weng/w2p</tag>
+  </scm>
+
+  	<developers>
+		<developer>
+			<email>sweng@reputation.com</email>
+			<name>Steve Weng</name>
+			<url>https://github.com/s4weng</url>
+			<id>s4weng</id>
+		</developer>
+	</developers>
+
+	<dependencies>
+		<dependency>
+		    <groupId>org.scala-lang</groupId>
+		    <artifactId>scala-library</artifactId>
+            <version>2.10.6</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.scala-lang</groupId>
+		    <artifactId>scala-reflect</artifactId>
+            <version>2.10.6</version>
+		</dependency>
+		<dependency> <!-- Spark dependency -->
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-core_2.10</artifactId>
+			<version>1.6.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency> <!-- Spark dependency -->
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-sql_2.10</artifactId>
+			<version>1.6.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency> <!-- Spark dependency -->
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-mllib_2.10</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+        <plugins>
+			<plugin>
+			      <groupId>org.apache.maven.plugins</groupId>
+			      <artifactId>maven-javadoc-plugin</artifactId>
+			      <version>2.10.3</version>
+			      <configuration>
+			          <quiet>true</quiet>
+			          <nonavbar>true</nonavbar>
+			          <notree>true</notree>
+			          <nocomment>true</nocomment>
+			          <nohelp>true</nohelp>
+
+			      </configuration>
+			      <executions>
+			          <execution>
+			              <id>attach-javadocs</id>
+			              <goals>
+			                  <goal>jar</goal>
+			              </goals>
+			          </execution>
+			      </executions>
+		 	</plugin>
+  <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>2.3.2</version>
+      <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+      </configuration>
+  </plugin>
+  <plugin>
+      <artifactId>maven-assembly-plugin</artifactId>
+      <version>2.3</version>
+      <configuration>
+          <descriptorRefs>
+              <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+      </configuration>
+      <executions>
+          <execution>
+              <phase>package</phase>
+              <goals>
+                  <goal>single</goal>
+              </goals>
+          </execution>
+      </executions>
+  </plugin>
+            <plugin>
+			      <groupId>org.apache.maven.plugins</groupId>
+			      <artifactId>maven-gpg-plugin</artifactId>
+			      <version>1.6</version>
+			      <executions>
+			          <execution>
+			              <id>sign-artifacts</id>
+			              <phase>verify</phase>
+			              <goals>
+			                  <goal>sign</goal>
+			              </goals>
+			          </execution>
+			      </executions>
+			</plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.3</version>
+
+            </plugin>
+
+            <plugin>
+		      <groupId>org.apache.maven.plugins</groupId>
+		      <artifactId>maven-source-plugin</artifactId>
+		      <version>2.1.2</version>
+		      <executions>
+		          <execution>
+		              <id>attach-sources</id>
+		              <goals>
+		                  <goal>jar</goal>
+		              </goals>
+		          </execution>
+		      </executions>
+		    </plugin>
+		    <plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-release-plugin</artifactId>
+			    <version>2.5.3</version>
+			    <configuration>
+			    <mavenExecutorId>forked-path</mavenExecutorId>
+			    <useReleaseProfile>false</useReleaseProfile>
+			    <arguments>-Psonatype-oss-release</arguments>
+			    </configuration>
+		    </plugin>
+
+            <plugin>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+                <version>3.2.2</version>
+
+                <executions>
+                    <execution>
+                        <id>doc</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.build.directory}/genjavadoc</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.6</version>
+                <executions>
+                    <execution>
+                        <id>empty-javadoc-jar</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>javadoc</classifier>
+                            <classesDirectory>${basedir}/javadoc</classesDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+	<distributionManagement>
+	  <snapshotRepository>
+	    <id>ossrh</id>
+	    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+	  </snapshotRepository>
+	  <repository>
+	    <id>ossrh</id>
+	    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+	  </repository>
+	</distributionManagement>
+
+	<parent>
+	  <groupId>org.sonatype.oss</groupId>
+	  <artifactId>oss-parent</artifactId>
+	  <version>7</version>
+	</parent>
+
+
+</project>
