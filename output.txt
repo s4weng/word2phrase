@@ -1,0 +1,864 @@
+Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T08:41:47-08:00)
+Maven home: /usr/local/Cellar/maven/3.3.9/libexec
+Java version: 1.7.0_80, vendor: Oracle Corporation
+Java home: /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "mac os x", version: "10.11.2", arch: "x86_64", family: "mac"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from /usr/local/Cellar/maven/3.3.9/libexec/conf/settings.xml
+[DEBUG] Reading user settings from /var/root/.m2/settings.xml
+[DEBUG] Reading global toolchains from /usr/local/Cellar/maven/3.3.9/libexec/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /var/root/.m2/toolchains.xml
+[DEBUG] Using local repository at /var/root/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /var/root/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project com.reputation.spark:word2phrase:jar:1.0.1: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.sonatype.oss:oss-parent:pom:7: (none)
+[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.reputation.spark:word2phrase:jar:1.0.1
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-javadoc-plugin is missing. @ line 93, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[DEBUG] Resolving plugin version for org.apache.maven.plugins:maven-javadoc-plugin
+[DEBUG] Could not find metadata org.apache.maven.plugins:maven-javadoc-plugin/maven-metadata.xml in local (/var/root/.m2/repository)
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-javadoc-plugin/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Resolved plugin version for org.apache.maven.plugins:maven-javadoc-plugin to 2.10.3 from repository central (https://repo.maven.apache.org/maven2, default, releases)
+[DEBUG] Resolving plugin prefix javadoc from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix javadoc to org.apache.maven.plugins:maven-javadoc-plugin from POM com.reputation.spark:word2phrase:jar:1.0.1
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.reputation.spark:word2phrase:jar:1.0.1
+[DEBUG] Tasks:   [javadoc:javadoc]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building word2phrase 1.0.1
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Resolving plugin prefix javadoc from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix javadoc to org.apache.maven.plugins:maven-javadoc-plugin from POM com.reputation.spark:word2phrase:jar:1.0.1
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.reputation.spark:word2phrase:1.0.1
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile]
+[DEBUG] Repositories (dependencies): [sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] --- init fork of com.reputation.spark:word2phrase:1.0.1 for org.apache.maven.plugins:maven-javadoc-plugin:2.10.3:javadoc (default-cli) ---
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [test]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-enforcer-plugin:1.0:enforce (enforce-maven)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <fail default-value="true">${enforcer.fail}</fail>
+  <failFast default-value="false">${enforcer.failFast}</failFast>
+  <ignoreCache default-value="false">${enforcer.ignoreCache}</ignoreCache>
+  <project>${project}</project>
+  <rules>
+    <requireMavenVersion>
+      <version>(,2.1.0),(2.1.0,2.2.0),(2.2.0,)</version>
+      <message>Maven 2.1.0 and 2.2.0 produce incorrect GPG signatures and checksums respectively.</message>
+    </requireMavenVersion>
+  </rules>
+  <session>${session}</session>
+  <skip default-value="false">${enforcer.skip}</skip>
+</configuration>
+[DEBUG] --- exit fork of com.reputation.spark:word2phrase:1.0.1 for org.apache.maven.plugins:maven-javadoc-plugin:2.10.3:javadoc (default-cli) ---
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-javadoc-plugin:2.10.3:javadoc (default-cli)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <additionalJOption>${additionalJOption}</additionalJOption>
+  <additionalparam>${additionalparam}</additionalparam>
+  <aggregate default-value="false">${aggregate}</aggregate>
+  <applyJavadocSecurityFix default-value="true">${maven.javadoc.applyJavadocSecurityFix}</applyJavadocSecurityFix>
+  <author default-value="true">${author}</author>
+  <bootclasspath>${bootclasspath}</bootclasspath>
+  <bootclasspathArtifacts>${bootclasspathArtifacts}</bootclasspathArtifacts>
+  <bottom default-value="Copyright &amp;#169; {inceptionYear}&amp;#x2013;{currentYear} {organizationName}. All rights reserved.">${bottom}</bottom>
+  <breakiterator default-value="false">${breakiterator}</breakiterator>
+  <charset>${charset}</charset>
+  <debug default-value="false">${debug}</debug>
+  <description>${description}</description>
+  <destDir default-value="apidocs">${destDir}</destDir>
+  <detectJavaApiLink default-value="true">${detectJavaApiLink}</detectJavaApiLink>
+  <detectLinks default-value="false">${detectLinks}</detectLinks>
+  <detectOfflineLinks default-value="true">${detectOfflineLinks}</detectOfflineLinks>
+  <docencoding default-value="${project.reporting.outputEncoding}">${docencoding}</docencoding>
+  <docfilessubdirs default-value="false">${docfilessubdirs}</docfilessubdirs>
+  <doclet>${doclet}</doclet>
+  <docletArtifact>${docletArtifact}</docletArtifact>
+  <docletArtifacts>${docletArtifacts}</docletArtifacts>
+  <docletPath>${docletPath}</docletPath>
+  <doctitle default-value="${project.name} ${project.version} API">${doctitle}</doctitle>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <excludePackageNames>${excludePackageNames}</excludePackageNames>
+  <excludedocfilessubdir>${excludedocfilessubdir}</excludedocfilessubdir>
+  <extdirs>${extdirs}</extdirs>
+  <failOnError default-value="true">${maven.javadoc.failOnError}</failOnError>
+  <footer>${footer}</footer>
+  <groups>${groups}</groups>
+  <header>${header}</header>
+  <helpfile>${helpfile}</helpfile>
+  <includeDependencySources default-value="false"/>
+  <includeTransitiveDependencySources default-value="false"/>
+  <isOffline default-value="${settings.offline}"/>
+  <javaApiLinks>${javaApiLinks}</javaApiLinks>
+  <javadocDirectory default-value="${basedir}/src/main/javadoc"/>
+  <javadocExecutable>${javadocExecutable}</javadocExecutable>
+  <javadocOptionsDir default-value="${project.build.directory}/javadoc-bundle-options"/>
+  <javadocVersion>${javadocVersion}</javadocVersion>
+  <keywords default-value="false">${keywords}</keywords>
+  <links>${links}</links>
+  <linksource default-value="false">${linksource}</linksource>
+  <localRepository>${localRepository}</localRepository>
+  <locale>${locale}</locale>
+  <maxmemory>${maxmemory}</maxmemory>
+  <minmemory>${minmemory}</minmemory>
+  <name>${name}</name>
+  <nocomment default-value="false">true</nocomment>
+  <nodeprecated default-value="false">${nodeprecated}</nodeprecated>
+  <nodeprecatedlist default-value="false">${nodeprecatedlist}</nodeprecatedlist>
+  <nohelp default-value="false">true</nohelp>
+  <noindex default-value="false">${noindex}</noindex>
+  <nonavbar default-value="false">true</nonavbar>
+  <nooverview default-value="false">${nooverview}</nooverview>
+  <noqualifier>${noqualifier}</noqualifier>
+  <nosince default-value="false">${nosince}</nosince>
+  <notimestamp default-value="false">${notimestamp}</notimestamp>
+  <notree default-value="false">true</notree>
+  <offlineLinks>${offlineLinks}</offlineLinks>
+  <old default-value="false">${old}</old>
+  <outputDirectory default-value="${project.build.directory}/apidocs">${destDir}</outputDirectory>
+  <overview default-value="${basedir}/src/main/javadoc/overview.html">${overview}</overview>
+  <packagesheader>${packagesheader}</packagesheader>
+  <project default-value="${project}"/>
+  <proxyHost>${proxyHost}</proxyHost>
+  <proxyPort>${proxyPort}</proxyPort>
+  <quiet default-value="false">true</quiet>
+  <reactorProjects>${reactorProjects}</reactorProjects>
+  <remoteRepositories>${project.remoteArtifactRepositories}</remoteRepositories>
+  <reportOutputDirectory default-value="${project.reporting.outputDirectory}/apidocs">${reportOutputDirectory}</reportOutputDirectory>
+  <resourcesArtifacts>${resourcesArtifacts}</resourcesArtifacts>
+  <serialwarn default-value="false">${serialwarn}</serialwarn>
+  <session default-value="${session}"/>
+  <settings default-value="${settings}"/>
+  <show default-value="protected">${show}</show>
+  <skip default-value="false">${maven.javadoc.skip}</skip>
+  <source>${source}</source>
+  <sourceDependencyCacheDir default-value="${project.build.directory}/distro-javadoc-sources"/>
+  <sourcepath>${sourcepath}</sourcepath>
+  <sourcetab>${sourcetab}</sourcetab>
+  <splitindex default-value="false">${splitindex}</splitindex>
+  <stylesheet default-value="java">${stylesheet}</stylesheet>
+  <stylesheetfile>${stylesheetfile}</stylesheetfile>
+  <subpackages>${subpackages}</subpackages>
+  <taglet>${taglet}</taglet>
+  <tagletArtifact>${tagletArtifact}</tagletArtifact>
+  <tagletArtifacts>${tagletArtifacts}</tagletArtifacts>
+  <tagletpath>${tagletpath}</tagletpath>
+  <taglets>${taglets}</taglets>
+  <tags>${tags}</tags>
+  <top>${top}</top>
+  <use default-value="true">${use}</use>
+  <useStandardDocletOptions default-value="true">${useStandardDocletOptions}</useStandardDocletOptions>
+  <validateLinks default-value="false">${validateLinks}</validateLinks>
+  <verbose default-value="false">${verbose}</verbose>
+  <version default-value="true">${version}</version>
+  <windowtitle default-value="${project.name} ${project.version} API">${windowtitle}</windowtitle>
+</configuration>
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] >>> maven-javadoc-plugin:2.10.3:javadoc (default-cli) > generate-sources @ word2phrase >>>
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=6, ConflictMarker.markTime=3, ConflictMarker.nodeCount=1561, ConflictIdSorter.graphTime=3, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=163, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=40, ConflictResolver.conflictItemCount=370, DefaultDependencyCollector.collectTime=768, DefaultDependencyCollector.transformTime=54}
+[DEBUG] com.reputation.spark:word2phrase:jar:1.0.1
+[DEBUG]    org.scala-lang:scala-library:jar:2.10.0:compile
+[DEBUG]    org.scala-lang:scala-reflect:jar:2.10.0:compile
+[DEBUG]    org.apache.spark:spark-core_2.10:jar:1.6.1:provided
+[DEBUG]       org.apache.avro:avro-mapred:jar:hadoop2:1.7.7:provided
+[DEBUG]          org.apache.avro:avro-ipc:jar:1.7.7:provided
+[DEBUG]             org.apache.avro:avro:jar:1.7.7:provided
+[DEBUG]          org.apache.avro:avro-ipc:jar:tests:1.7.7:provided
+[DEBUG]          org.codehaus.jackson:jackson-core-asl:jar:1.9.13:provided
+[DEBUG]          org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13:provided
+[DEBUG]       com.twitter:chill_2.10:jar:0.5.0:provided
+[DEBUG]          com.esotericsoftware.kryo:kryo:jar:2.21:provided
+[DEBUG]             com.esotericsoftware.reflectasm:reflectasm:jar:shaded:1.07:provided
+[DEBUG]             com.esotericsoftware.minlog:minlog:jar:1.2:provided
+[DEBUG]             org.objenesis:objenesis:jar:1.2:provided
+[DEBUG]       com.twitter:chill-java:jar:0.5.0:provided
+[DEBUG]       org.apache.xbean:xbean-asm5-shaded:jar:4.4:compile
+[DEBUG]       org.apache.hadoop:hadoop-client:jar:2.2.0:provided
+[DEBUG]          org.apache.hadoop:hadoop-common:jar:2.2.0:provided
+[DEBUG]             commons-cli:commons-cli:jar:1.2:provided
+[DEBUG]             org.apache.commons:commons-math:jar:2.1:provided
+[DEBUG]             xmlenc:xmlenc:jar:0.52:provided
+[DEBUG]             commons-configuration:commons-configuration:jar:1.6:provided
+[DEBUG]                commons-collections:commons-collections:jar:3.2.1:provided
+[DEBUG]                commons-digester:commons-digester:jar:1.8:provided
+[DEBUG]                   commons-beanutils:commons-beanutils:jar:1.7.0:provided
+[DEBUG]                commons-beanutils:commons-beanutils-core:jar:1.8.0:provided
+[DEBUG]             org.apache.hadoop:hadoop-auth:jar:2.2.0:provided
+[DEBUG]             org.apache.commons:commons-compress:jar:1.4.1:provided
+[DEBUG]                org.tukaani:xz:jar:1.0:provided
+[DEBUG]          org.apache.hadoop:hadoop-hdfs:jar:2.2.0:provided
+[DEBUG]             org.mortbay.jetty:jetty-util:jar:6.1.26:provided
+[DEBUG]          org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0:provided
+[DEBUG]             org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0:provided
+[DEBUG]                org.apache.hadoop:hadoop-yarn-client:jar:2.2.0:provided
+[DEBUG]                   com.google.inject:guice:jar:3.0:provided
+[DEBUG]                      javax.inject:javax.inject:jar:1:provided
+[DEBUG]                      aopalliance:aopalliance:jar:1.0:provided
+[DEBUG]                   com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly2:jar:1.9:provided
+[DEBUG]                      com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar:1.9:provided
+[DEBUG]                         javax.servlet:javax.servlet-api:jar:3.0.1:provided
+[DEBUG]                         com.sun.jersey:jersey-client:jar:1.9:provided
+[DEBUG]                      com.sun.jersey:jersey-grizzly2:jar:1.9:provided
+[DEBUG]                         org.glassfish.grizzly:grizzly-http:jar:2.1.2:provided
+[DEBUG]                            org.glassfish.grizzly:grizzly-framework:jar:2.1.2:provided
+[DEBUG]                               org.glassfish.gmbal:gmbal-api-only:jar:3.0.0-b023:provided
+[DEBUG]                                  org.glassfish.external:management-api:jar:3.0.0-b012:provided
+[DEBUG]                         org.glassfish.grizzly:grizzly-http-server:jar:2.1.2:provided
+[DEBUG]                            org.glassfish.grizzly:grizzly-rcm:jar:2.1.2:provided
+[DEBUG]                         org.glassfish.grizzly:grizzly-http-servlet:jar:2.1.2:provided
+[DEBUG]                         org.glassfish:javax.servlet:jar:3.1:provided
+[DEBUG]                   com.sun.jersey:jersey-json:jar:1.9:provided
+[DEBUG]                      org.codehaus.jettison:jettison:jar:1.1:provided
+[DEBUG]                         stax:stax-api:jar:1.0.1:provided
+[DEBUG]                      org.codehaus.jackson:jackson-jaxrs:jar:1.8.3:provided
+[DEBUG]                      org.codehaus.jackson:jackson-xc:jar:1.8.3:provided
+[DEBUG]                   com.sun.jersey.contribs:jersey-guice:jar:1.9:provided
+[DEBUG]                org.apache.hadoop:hadoop-yarn-server-common:jar:2.2.0:provided
+[DEBUG]             org.apache.hadoop:hadoop-mapreduce-client-shuffle:jar:2.2.0:provided
+[DEBUG]          org.apache.hadoop:hadoop-yarn-api:jar:2.2.0:provided
+[DEBUG]          org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.2.0:provided
+[DEBUG]             org.apache.hadoop:hadoop-yarn-common:jar:2.2.0:provided
+[DEBUG]          org.apache.hadoop:hadoop-mapreduce-client-jobclient:jar:2.2.0:provided
+[DEBUG]          org.apache.hadoop:hadoop-annotations:jar:2.2.0:provided
+[DEBUG]       org.apache.spark:spark-launcher_2.10:jar:1.6.1:provided
+[DEBUG]       org.apache.spark:spark-network-common_2.10:jar:1.6.1:provided
+[DEBUG]       org.apache.spark:spark-network-shuffle_2.10:jar:1.6.1:provided
+[DEBUG]          org.fusesource.leveldbjni:leveldbjni-all:jar:1.8:provided
+[DEBUG]          com.fasterxml.jackson.core:jackson-annotations:jar:2.4.4:provided
+[DEBUG]       org.apache.spark:spark-unsafe_2.10:jar:1.6.1:provided
+[DEBUG]       net.java.dev.jets3t:jets3t:jar:0.7.1:provided
+[DEBUG]          commons-codec:commons-codec:jar:1.3:provided
+[DEBUG]          commons-httpclient:commons-httpclient:jar:3.1:provided
+[DEBUG]       org.apache.curator:curator-recipes:jar:2.4.0:provided
+[DEBUG]          org.apache.curator:curator-framework:jar:2.4.0:provided
+[DEBUG]             org.apache.curator:curator-client:jar:2.4.0:provided
+[DEBUG]          org.apache.zookeeper:zookeeper:jar:3.4.5:provided
+[DEBUG]             jline:jline:jar:0.9.94:provided
+[DEBUG]          com.google.guava:guava:jar:14.0.1:provided
+[DEBUG]       org.eclipse.jetty.orbit:javax.servlet:jar:3.0.0.v201112011016:provided
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.3.2:provided
+[DEBUG]       org.apache.commons:commons-math3:jar:3.4.1:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:1.3.9:provided
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.10:compile
+[DEBUG]       org.slf4j:jul-to-slf4j:jar:1.7.10:provided
+[DEBUG]       org.slf4j:jcl-over-slf4j:jar:1.7.10:provided
+[DEBUG]       log4j:log4j:jar:1.2.17:provided
+[DEBUG]       org.slf4j:slf4j-log4j12:jar:1.7.10:provided
+[DEBUG]       com.ning:compress-lzf:jar:1.0.3:provided
+[DEBUG]       org.xerial.snappy:snappy-java:jar:1.1.2:provided
+[DEBUG]       net.jpountz.lz4:lz4:jar:1.3.0:provided
+[DEBUG]       org.roaringbitmap:RoaringBitmap:jar:0.5.11:provided
+[DEBUG]       commons-net:commons-net:jar:2.2:provided
+[DEBUG]       com.typesafe.akka:akka-remote_2.10:jar:2.3.11:provided
+[DEBUG]          com.typesafe.akka:akka-actor_2.10:jar:2.3.11:provided
+[DEBUG]             com.typesafe:config:jar:1.2.1:provided
+[DEBUG]          io.netty:netty:jar:3.8.0.Final:provided
+[DEBUG]          com.google.protobuf:protobuf-java:jar:2.5.0:provided
+[DEBUG]          org.uncommons.maths:uncommons-maths:jar:1.2.2a:provided
+[DEBUG]       com.typesafe.akka:akka-slf4j_2.10:jar:2.3.11:provided
+[DEBUG]       org.json4s:json4s-jackson_2.10:jar:3.2.10:provided
+[DEBUG]          org.json4s:json4s-core_2.10:jar:3.2.10:provided
+[DEBUG]             org.json4s:json4s-ast_2.10:jar:3.2.10:provided
+[DEBUG]             org.scala-lang:scalap:jar:2.10.0:provided
+[DEBUG]                org.scala-lang:scala-compiler:jar:2.10.0:provided
+[DEBUG]       com.sun.jersey:jersey-server:jar:1.9:provided
+[DEBUG]          asm:asm:jar:3.1:provided
+[DEBUG]       com.sun.jersey:jersey-core:jar:1.9:provided
+[DEBUG]       org.apache.mesos:mesos:jar:shaded-protobuf:0.21.1:provided
+[DEBUG]       io.netty:netty-all:jar:4.0.29.Final:provided
+[DEBUG]       com.clearspring.analytics:stream:jar:2.7.0:provided
+[DEBUG]       io.dropwizard.metrics:metrics-core:jar:3.1.2:provided
+[DEBUG]       io.dropwizard.metrics:metrics-jvm:jar:3.1.2:provided
+[DEBUG]       io.dropwizard.metrics:metrics-json:jar:3.1.2:provided
+[DEBUG]       io.dropwizard.metrics:metrics-graphite:jar:3.1.2:provided
+[DEBUG]       com.fasterxml.jackson.core:jackson-databind:jar:2.4.4:provided
+[DEBUG]          com.fasterxml.jackson.core:jackson-core:jar:2.4.4:provided
+[DEBUG]       com.fasterxml.jackson.module:jackson-module-scala_2.10:jar:2.4.4:provided
+[DEBUG]          com.thoughtworks.paranamer:paranamer:jar:2.6:provided
+[DEBUG]       org.apache.ivy:ivy:jar:2.4.0:provided
+[DEBUG]       oro:oro:jar:2.0.8:provided
+[DEBUG]       org.tachyonproject:tachyon-client:jar:0.8.2:provided
+[DEBUG]          commons-lang:commons-lang:jar:2.4:provided
+[DEBUG]          commons-io:commons-io:jar:2.4:provided
+[DEBUG]          org.tachyonproject:tachyon-underfs-hdfs:jar:0.8.2:provided
+[DEBUG]          org.tachyonproject:tachyon-underfs-s3:jar:0.8.2:provided
+[DEBUG]          org.tachyonproject:tachyon-underfs-local:jar:0.8.2:provided
+[DEBUG]       net.razorvine:pyrolite:jar:4.9:provided
+[DEBUG]       net.sf.py4j:py4j:jar:0.9:provided
+[DEBUG]       org.spark-project.spark:unused:jar:1.0.0:compile
+[DEBUG]    org.apache.spark:spark-sql_2.10:jar:1.6.1:provided
+[DEBUG]       org.apache.spark:spark-catalyst_2.10:jar:1.6.1:provided
+[DEBUG]          org.codehaus.janino:janino:jar:2.7.8:provided
+[DEBUG]             org.codehaus.janino:commons-compiler:jar:2.7.8:provided
+[DEBUG]       org.apache.parquet:parquet-column:jar:1.7.0:provided
+[DEBUG]          org.apache.parquet:parquet-common:jar:1.7.0:provided
+[DEBUG]          org.apache.parquet:parquet-encoding:jar:1.7.0:provided
+[DEBUG]             org.apache.parquet:parquet-generator:jar:1.7.0:provided
+[DEBUG]       org.apache.parquet:parquet-hadoop:jar:1.7.0:provided
+[DEBUG]          org.apache.parquet:parquet-format:jar:2.3.0-incubating:provided
+[DEBUG]          org.apache.parquet:parquet-jackson:jar:1.7.0:provided
+[DEBUG]    org.apache.spark:spark-mllib_2.10:jar:1.6.1:compile
+[DEBUG]       org.apache.spark:spark-streaming_2.10:jar:1.6.1:compile
+[DEBUG]       org.apache.spark:spark-graphx_2.10:jar:1.6.1:compile
+[DEBUG]          com.github.fommil.netlib:core:jar:1.1.2:compile
+[DEBUG]          net.sourceforge.f2j:arpack_combined_all:jar:0.1:compile
+[DEBUG]       org.scalanlp:breeze_2.10:jar:0.11.2:compile
+[DEBUG]          org.scalanlp:breeze-macros_2.10:jar:0.11.2:compile
+[DEBUG]             org.scalamacros:quasiquotes_2.10:jar:2.0.0-M8:compile
+[DEBUG]          net.sf.opencsv:opencsv:jar:2.3:compile
+[DEBUG]          com.github.rwl:jtransforms:jar:2.4.0:compile
+[DEBUG]          org.spire-math:spire_2.10:jar:0.7.4:compile
+[DEBUG]             org.spire-math:spire-macros_2.10:jar:0.7.4:compile
+[DEBUG]       org.jpmml:pmml-model:jar:1.1.15:compile
+[DEBUG]          org.jpmml:pmml-agent:jar:1.1.15:compile
+[DEBUG]          org.jpmml:pmml-schema:jar:1.1.15:compile
+[DEBUG]          com.sun.xml.bind:jaxb-impl:jar:2.2.7:compile
+[DEBUG]             com.sun.xml.bind:jaxb-core:jar:2.2.7:compile
+[DEBUG]                javax.xml.bind:jaxb-api:jar:2.2.7:compile
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ word2phrase ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=100, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=32, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1, ConflictResolver.conflictItemCount=90, DefaultDependencyCollector.collectTime=56, DefaultDependencyCollector.transformTime=1}
+[DEBUG] org.apache.maven.plugins:maven-enforcer-plugin:jar:1.0:
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.2:test
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-10:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:1.5.8:compile
+[DEBUG]    commons-lang:commons-lang:jar:2.3:compile
+[DEBUG]    org.apache.maven.enforcer:enforcer-api:jar:1.0:compile
+[DEBUG]    org.apache.maven.enforcer:enforcer-rules:jar:1.0:compile
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:1.2:compile
+[DEBUG]          org.apache.maven.shared:maven-plugin-testing-harness:jar:1.1:test
+[DEBUG]             org.codehaus.plexus:plexus-archiver:jar:1.0-alpha-7:test
+[DEBUG]       org.beanshell:bsh:jar:2.0b4:compile
+[DEBUG]       org.apache.maven.shared:maven-dependency-tree:jar:1.2:compile
+[DEBUG]       org.codehaus.plexus:plexus-i18n:jar:1.0-beta-6:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-enforcer-plugin:1.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-enforcer-plugin:1.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-enforcer-plugin:1.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-enforcer-plugin:jar:1.0
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.9
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-10
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.8
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.3
+[DEBUG]   Included: org.apache.maven.enforcer:enforcer-api:jar:1.0
+[DEBUG]   Included: org.apache.maven.enforcer:enforcer-rules:jar:1.0
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:1.2
+[DEBUG]   Included: org.beanshell:bsh:jar:2.0b4
+[DEBUG]   Included: org.apache.maven.shared:maven-dependency-tree:jar:1.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-i18n:jar:1.0-beta-6
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-enforcer-plugin:1.0:enforce from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-enforcer-plugin:1.0, parent: sun.misc.Launcher$AppClassLoader@409a44d6]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-enforcer-plugin:1.0:enforce' with basic configurator -->
+[DEBUG]   (s) fail = true
+[DEBUG]   (s) failFast = false
+[DEBUG]   (f) ignoreCache = false
+[DEBUG]   (s) project = MavenProject: com.reputation.spark:word2phrase:1.0.1 @ /Users/sweng/Desktop/w2p/pom.xml
+[DEBUG]   (s) version = (,2.1.0),(2.1.0,2.2.0),(2.2.0,)
+[DEBUG]   (f) message = Maven 2.1.0 and 2.2.0 produce incorrect GPG signatures and checksums respectively.
+[DEBUG]   (s) rules = [org.apache.maven.plugins.enforcer.RequireMavenVersion@55165e0c]
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@2f789178
+[DEBUG]   (s) skip = false
+[DEBUG] -- end configuration --
+[DEBUG] Executing rule: org.apache.maven.plugins.enforcer.RequireMavenVersion
+[DEBUG] Rule org.apache.maven.plugins.enforcer.RequireMavenVersion is cacheable.
+[DEBUG] Detected Maven Version: 3.3.9
+[DEBUG] Detected Maven Version: 3.3.9 is allowed in the range (,2.1.0),(2.1.0,2.2.0),(2.2.0,).
+[INFO] 
+[INFO] <<< maven-javadoc-plugin:2.10.3:javadoc (default-cli) < generate-sources @ word2phrase <<<
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=6, ConflictMarker.markTime=2, ConflictMarker.nodeCount=1561, ConflictIdSorter.graphTime=2, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=163, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9, ConflictResolver.conflictItemCount=370, DefaultDependencyCollector.collectTime=51, DefaultDependencyCollector.transformTime=19}
+[DEBUG] com.reputation.spark:word2phrase:jar:1.0.1
+[DEBUG]    org.scala-lang:scala-library:jar:2.10.0:compile
+[DEBUG]    org.scala-lang:scala-reflect:jar:2.10.0:compile
+[DEBUG]    org.apache.spark:spark-core_2.10:jar:1.6.1:provided
+[DEBUG]       org.apache.avro:avro-mapred:jar:hadoop2:1.7.7:provided
+[DEBUG]          org.apache.avro:avro-ipc:jar:1.7.7:provided
+[DEBUG]             org.apache.avro:avro:jar:1.7.7:provided
+[DEBUG]          org.apache.avro:avro-ipc:jar:tests:1.7.7:provided
+[DEBUG]          org.codehaus.jackson:jackson-core-asl:jar:1.9.13:provided
+[DEBUG]          org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13:provided
+[DEBUG]       com.twitter:chill_2.10:jar:0.5.0:provided
+[DEBUG]          com.esotericsoftware.kryo:kryo:jar:2.21:provided
+[DEBUG]             com.esotericsoftware.reflectasm:reflectasm:jar:shaded:1.07:provided
+[DEBUG]             com.esotericsoftware.minlog:minlog:jar:1.2:provided
+[DEBUG]             org.objenesis:objenesis:jar:1.2:provided
+[DEBUG]       com.twitter:chill-java:jar:0.5.0:provided
+[DEBUG]       org.apache.xbean:xbean-asm5-shaded:jar:4.4:compile
+[DEBUG]       org.apache.hadoop:hadoop-client:jar:2.2.0:provided
+[DEBUG]          org.apache.hadoop:hadoop-common:jar:2.2.0:provided
+[DEBUG]             commons-cli:commons-cli:jar:1.2:provided
+[DEBUG]             org.apache.commons:commons-math:jar:2.1:provided
+[DEBUG]             xmlenc:xmlenc:jar:0.52:provided
+[DEBUG]             commons-configuration:commons-configuration:jar:1.6:provided
+[DEBUG]                commons-collections:commons-collections:jar:3.2.1:provided
+[DEBUG]                commons-digester:commons-digester:jar:1.8:provided
+[DEBUG]                   commons-beanutils:commons-beanutils:jar:1.7.0:provided
+[DEBUG]                commons-beanutils:commons-beanutils-core:jar:1.8.0:provided
+[DEBUG]             org.apache.hadoop:hadoop-auth:jar:2.2.0:provided
+[DEBUG]             org.apache.commons:commons-compress:jar:1.4.1:provided
+[DEBUG]                org.tukaani:xz:jar:1.0:provided
+[DEBUG]          org.apache.hadoop:hadoop-hdfs:jar:2.2.0:provided
+[DEBUG]             org.mortbay.jetty:jetty-util:jar:6.1.26:provided
+[DEBUG]          org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0:provided
+[DEBUG]             org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0:provided
+[DEBUG]                org.apache.hadoop:hadoop-yarn-client:jar:2.2.0:provided
+[DEBUG]                   com.google.inject:guice:jar:3.0:provided
+[DEBUG]                      javax.inject:javax.inject:jar:1:provided
+[DEBUG]                      aopalliance:aopalliance:jar:1.0:provided
+[DEBUG]                   com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly2:jar:1.9:provided
+[DEBUG]                      com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar:1.9:provided
+[DEBUG]                         javax.servlet:javax.servlet-api:jar:3.0.1:provided
+[DEBUG]                         com.sun.jersey:jersey-client:jar:1.9:provided
+[DEBUG]                      com.sun.jersey:jersey-grizzly2:jar:1.9:provided
+[DEBUG]                         org.glassfish.grizzly:grizzly-http:jar:2.1.2:provided
+[DEBUG]                            org.glassfish.grizzly:grizzly-framework:jar:2.1.2:provided
+[DEBUG]                               org.glassfish.gmbal:gmbal-api-only:jar:3.0.0-b023:provided
+[DEBUG]                                  org.glassfish.external:management-api:jar:3.0.0-b012:provided
+[DEBUG]                         org.glassfish.grizzly:grizzly-http-server:jar:2.1.2:provided
+[DEBUG]                            org.glassfish.grizzly:grizzly-rcm:jar:2.1.2:provided
+[DEBUG]                         org.glassfish.grizzly:grizzly-http-servlet:jar:2.1.2:provided
+[DEBUG]                         org.glassfish:javax.servlet:jar:3.1:provided
+[DEBUG]                   com.sun.jersey:jersey-json:jar:1.9:provided
+[DEBUG]                      org.codehaus.jettison:jettison:jar:1.1:provided
+[DEBUG]                         stax:stax-api:jar:1.0.1:provided
+[DEBUG]                      org.codehaus.jackson:jackson-jaxrs:jar:1.8.3:provided
+[DEBUG]                      org.codehaus.jackson:jackson-xc:jar:1.8.3:provided
+[DEBUG]                   com.sun.jersey.contribs:jersey-guice:jar:1.9:provided
+[DEBUG]                org.apache.hadoop:hadoop-yarn-server-common:jar:2.2.0:provided
+[DEBUG]             org.apache.hadoop:hadoop-mapreduce-client-shuffle:jar:2.2.0:provided
+[DEBUG]          org.apache.hadoop:hadoop-yarn-api:jar:2.2.0:provided
+[DEBUG]          org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.2.0:provided
+[DEBUG]             org.apache.hadoop:hadoop-yarn-common:jar:2.2.0:provided
+[DEBUG]          org.apache.hadoop:hadoop-mapreduce-client-jobclient:jar:2.2.0:provided
+[DEBUG]          org.apache.hadoop:hadoop-annotations:jar:2.2.0:provided
+[DEBUG]       org.apache.spark:spark-launcher_2.10:jar:1.6.1:provided
+[DEBUG]       org.apache.spark:spark-network-common_2.10:jar:1.6.1:provided
+[DEBUG]       org.apache.spark:spark-network-shuffle_2.10:jar:1.6.1:provided
+[DEBUG]          org.fusesource.leveldbjni:leveldbjni-all:jar:1.8:provided
+[DEBUG]          com.fasterxml.jackson.core:jackson-annotations:jar:2.4.4:provided
+[DEBUG]       org.apache.spark:spark-unsafe_2.10:jar:1.6.1:provided
+[DEBUG]       net.java.dev.jets3t:jets3t:jar:0.7.1:provided
+[DEBUG]          commons-codec:commons-codec:jar:1.3:provided
+[DEBUG]          commons-httpclient:commons-httpclient:jar:3.1:provided
+[DEBUG]       org.apache.curator:curator-recipes:jar:2.4.0:provided
+[DEBUG]          org.apache.curator:curator-framework:jar:2.4.0:provided
+[DEBUG]             org.apache.curator:curator-client:jar:2.4.0:provided
+[DEBUG]          org.apache.zookeeper:zookeeper:jar:3.4.5:provided
+[DEBUG]             jline:jline:jar:0.9.94:provided
+[DEBUG]          com.google.guava:guava:jar:14.0.1:provided
+[DEBUG]       org.eclipse.jetty.orbit:javax.servlet:jar:3.0.0.v201112011016:provided
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.3.2:provided
+[DEBUG]       org.apache.commons:commons-math3:jar:3.4.1:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:1.3.9:provided
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.10:compile
+[DEBUG]       org.slf4j:jul-to-slf4j:jar:1.7.10:provided
+[DEBUG]       org.slf4j:jcl-over-slf4j:jar:1.7.10:provided
+[DEBUG]       log4j:log4j:jar:1.2.17:provided
+[DEBUG]       org.slf4j:slf4j-log4j12:jar:1.7.10:provided
+[DEBUG]       com.ning:compress-lzf:jar:1.0.3:provided
+[DEBUG]       org.xerial.snappy:snappy-java:jar:1.1.2:provided
+[DEBUG]       net.jpountz.lz4:lz4:jar:1.3.0:provided
+[DEBUG]       org.roaringbitmap:RoaringBitmap:jar:0.5.11:provided
+[DEBUG]       commons-net:commons-net:jar:2.2:provided
+[DEBUG]       com.typesafe.akka:akka-remote_2.10:jar:2.3.11:provided
+[DEBUG]          com.typesafe.akka:akka-actor_2.10:jar:2.3.11:provided
+[DEBUG]             com.typesafe:config:jar:1.2.1:provided
+[DEBUG]          io.netty:netty:jar:3.8.0.Final:provided
+[DEBUG]          com.google.protobuf:protobuf-java:jar:2.5.0:provided
+[DEBUG]          org.uncommons.maths:uncommons-maths:jar:1.2.2a:provided
+[DEBUG]       com.typesafe.akka:akka-slf4j_2.10:jar:2.3.11:provided
+[DEBUG]       org.json4s:json4s-jackson_2.10:jar:3.2.10:provided
+[DEBUG]          org.json4s:json4s-core_2.10:jar:3.2.10:provided
+[DEBUG]             org.json4s:json4s-ast_2.10:jar:3.2.10:provided
+[DEBUG]             org.scala-lang:scalap:jar:2.10.0:provided
+[DEBUG]                org.scala-lang:scala-compiler:jar:2.10.0:provided
+[DEBUG]       com.sun.jersey:jersey-server:jar:1.9:provided
+[DEBUG]          asm:asm:jar:3.1:provided
+[DEBUG]       com.sun.jersey:jersey-core:jar:1.9:provided
+[DEBUG]       org.apache.mesos:mesos:jar:shaded-protobuf:0.21.1:provided
+[DEBUG]       io.netty:netty-all:jar:4.0.29.Final:provided
+[DEBUG]       com.clearspring.analytics:stream:jar:2.7.0:provided
+[DEBUG]       io.dropwizard.metrics:metrics-core:jar:3.1.2:provided
+[DEBUG]       io.dropwizard.metrics:metrics-jvm:jar:3.1.2:provided
+[DEBUG]       io.dropwizard.metrics:metrics-json:jar:3.1.2:provided
+[DEBUG]       io.dropwizard.metrics:metrics-graphite:jar:3.1.2:provided
+[DEBUG]       com.fasterxml.jackson.core:jackson-databind:jar:2.4.4:provided
+[DEBUG]          com.fasterxml.jackson.core:jackson-core:jar:2.4.4:provided
+[DEBUG]       com.fasterxml.jackson.module:jackson-module-scala_2.10:jar:2.4.4:provided
+[DEBUG]          com.thoughtworks.paranamer:paranamer:jar:2.6:provided
+[DEBUG]       org.apache.ivy:ivy:jar:2.4.0:provided
+[DEBUG]       oro:oro:jar:2.0.8:provided
+[DEBUG]       org.tachyonproject:tachyon-client:jar:0.8.2:provided
+[DEBUG]          commons-lang:commons-lang:jar:2.4:provided
+[DEBUG]          commons-io:commons-io:jar:2.4:provided
+[DEBUG]          org.tachyonproject:tachyon-underfs-hdfs:jar:0.8.2:provided
+[DEBUG]          org.tachyonproject:tachyon-underfs-s3:jar:0.8.2:provided
+[DEBUG]          org.tachyonproject:tachyon-underfs-local:jar:0.8.2:provided
+[DEBUG]       net.razorvine:pyrolite:jar:4.9:provided
+[DEBUG]       net.sf.py4j:py4j:jar:0.9:provided
+[DEBUG]       org.spark-project.spark:unused:jar:1.0.0:compile
+[DEBUG]    org.apache.spark:spark-sql_2.10:jar:1.6.1:provided
+[DEBUG]       org.apache.spark:spark-catalyst_2.10:jar:1.6.1:provided
+[DEBUG]          org.codehaus.janino:janino:jar:2.7.8:provided
+[DEBUG]             org.codehaus.janino:commons-compiler:jar:2.7.8:provided
+[DEBUG]       org.apache.parquet:parquet-column:jar:1.7.0:provided
+[DEBUG]          org.apache.parquet:parquet-common:jar:1.7.0:provided
+[DEBUG]          org.apache.parquet:parquet-encoding:jar:1.7.0:provided
+[DEBUG]             org.apache.parquet:parquet-generator:jar:1.7.0:provided
+[DEBUG]       org.apache.parquet:parquet-hadoop:jar:1.7.0:provided
+[DEBUG]          org.apache.parquet:parquet-format:jar:2.3.0-incubating:provided
+[DEBUG]          org.apache.parquet:parquet-jackson:jar:1.7.0:provided
+[DEBUG]    org.apache.spark:spark-mllib_2.10:jar:1.6.1:compile
+[DEBUG]       org.apache.spark:spark-streaming_2.10:jar:1.6.1:compile
+[DEBUG]       org.apache.spark:spark-graphx_2.10:jar:1.6.1:compile
+[DEBUG]          com.github.fommil.netlib:core:jar:1.1.2:compile
+[DEBUG]          net.sourceforge.f2j:arpack_combined_all:jar:0.1:compile
+[DEBUG]       org.scalanlp:breeze_2.10:jar:0.11.2:compile
+[DEBUG]          org.scalanlp:breeze-macros_2.10:jar:0.11.2:compile
+[DEBUG]             org.scalamacros:quasiquotes_2.10:jar:2.0.0-M8:compile
+[DEBUG]          net.sf.opencsv:opencsv:jar:2.3:compile
+[DEBUG]          com.github.rwl:jtransforms:jar:2.4.0:compile
+[DEBUG]          org.spire-math:spire_2.10:jar:0.7.4:compile
+[DEBUG]             org.spire-math:spire-macros_2.10:jar:0.7.4:compile
+[DEBUG]       org.jpmml:pmml-model:jar:1.1.15:compile
+[DEBUG]          org.jpmml:pmml-agent:jar:1.1.15:compile
+[DEBUG]          org.jpmml:pmml-schema:jar:1.1.15:compile
+[DEBUG]          com.sun.xml.bind:jaxb-impl:jar:2.2.7:compile
+[DEBUG]             com.sun.xml.bind:jaxb-core:jar:2.2.7:compile
+[DEBUG]                javax.xml.bind:jaxb-api:jar:2.2.7:compile
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.10.3:javadoc (default-cli) @ word2phrase ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=301, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=75, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1, ConflictResolver.conflictItemCount=183, DefaultDependencyCollector.collectTime=210, DefaultDependencyCollector.transformTime=4}
+[DEBUG] org.apache.maven.plugins:maven-javadoc-plugin:jar:2.10.3:
+[DEBUG]    org.apache.maven:maven-core:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.2.1:compile
+[DEBUG]       org.slf4j:slf4j-jdk14:jar:1.5.6:runtime
+[DEBUG]          org.slf4j:slf4j-api:jar:1.5.6:runtime
+[DEBUG]       org.slf4j:jcl-over-slf4j:jar:1.5.6:runtime
+[DEBUG]       org.apache.maven:maven-profile:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.2.1:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.2:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.2.1:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.11:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-artifact-manager:jar:2.2.1:compile
+[DEBUG]       backport-util-concurrent:backport-util-concurrent:jar:3.1:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:2.2.1:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-archiver:jar:2.5:compile
+[DEBUG]    org.apache.maven.shared:maven-invoker:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile
+[DEBUG]    org.apache.maven.doxia:doxia-sink-api:jar:1.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-logging-api:jar:1.4:compile
+[DEBUG]    org.apache.maven.doxia:doxia-site-renderer:jar:1.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-core:jar:1.4:compile
+[DEBUG]          xerces:xercesImpl:jar:2.9.1:compile
+[DEBUG]             xml-apis:xml-apis:jar:1.3.04:compile
+[DEBUG]       org.apache.maven.doxia:doxia-decoration-model:jar:1.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-module-xhtml:jar:1.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-module-fml:jar:1.4:compile
+[DEBUG]       org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7:compile
+[DEBUG]       org.codehaus.plexus:plexus-velocity:jar:1.1.7:compile
+[DEBUG]       org.apache.velocity:velocity:jar:1.5:compile
+[DEBUG]          oro:oro:jar:2.0.8:compile
+[DEBUG]       org.apache.velocity:velocity-tools:jar:2.0:compile
+[DEBUG]          commons-beanutils:commons-beanutils:jar:1.7.0:compile
+[DEBUG]          commons-digester:commons-digester:jar:1.8:compile
+[DEBUG]          commons-chain:commons-chain:jar:1.1:compile
+[DEBUG]          commons-validator:commons-validator:jar:1.3.1:compile
+[DEBUG]          dom4j:dom4j:jar:1.1:compile
+[DEBUG]          sslext:sslext:jar:1.2-0:compile
+[DEBUG]          org.apache.struts:struts-core:jar:1.3.8:compile
+[DEBUG]             antlr:antlr:jar:2.7.2:compile
+[DEBUG]          org.apache.struts:struts-taglib:jar:1.3.8:compile
+[DEBUG]          org.apache.struts:struts-tiles:jar:1.3.8:compile
+[DEBUG]       commons-collections:commons-collections:jar:3.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-6:compile
+[DEBUG]    commons-lang:commons-lang:jar:2.4:compile
+[DEBUG]    commons-io:commons-io:jar:2.2:compile
+[DEBUG]    org.apache.httpcomponents:httpclient:jar:4.2.3:compile
+[DEBUG]       org.apache.httpcomponents:httpcore:jar:4.2.2:compile
+[DEBUG]       commons-codec:commons-codec:jar:1.6:compile
+[DEBUG]    commons-logging:commons-logging:jar:1.1.1:compile
+[DEBUG]    log4j:log4j:jar:1.2.14:compile
+[DEBUG]    com.thoughtworks.qdox:qdox:jar:1.12.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:2.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-io:jar:2.4:compile
+[DEBUG]       org.apache.commons:commons-compress:jar:1.9:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.20:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-javadoc-plugin:2.10.3
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-javadoc-plugin:2.10.3
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-javadoc-plugin:2.10.3
+[DEBUG]   Included: org.apache.maven.plugins:maven-javadoc-plugin:jar:2.10.3
+[DEBUG]   Included: org.slf4j:slf4j-jdk14:jar:1.5.6
+[DEBUG]   Included: org.slf4j:jcl-over-slf4j:jar:1.5.6
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.11
+[DEBUG]   Included: backport-util-concurrent:backport-util-concurrent:jar:3.1
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:3.0
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.5
+[DEBUG]   Included: org.apache.maven.shared:maven-invoker:jar:2.0.9
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:1.3
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-logging-api:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-site-renderer:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-core:jar:1.4
+[DEBUG]   Included: xerces:xercesImpl:jar:2.9.1
+[DEBUG]   Included: xml-apis:xml-apis:jar:1.3.04
+[DEBUG]   Included: org.apache.maven.doxia:doxia-decoration-model:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-xhtml:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-fml:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7
+[DEBUG]   Included: org.codehaus.plexus:plexus-velocity:jar:1.1.7
+[DEBUG]   Included: org.apache.velocity:velocity:jar:1.5
+[DEBUG]   Included: oro:oro:jar:2.0.8
+[DEBUG]   Included: org.apache.velocity:velocity-tools:jar:2.0
+[DEBUG]   Included: commons-beanutils:commons-beanutils:jar:1.7.0
+[DEBUG]   Included: commons-digester:commons-digester:jar:1.8
+[DEBUG]   Included: commons-chain:commons-chain:jar:1.1
+[DEBUG]   Included: commons-validator:commons-validator:jar:1.3.1
+[DEBUG]   Included: dom4j:dom4j:jar:1.1
+[DEBUG]   Included: sslext:sslext:jar:1.2-0
+[DEBUG]   Included: org.apache.struts:struts-core:jar:1.3.8
+[DEBUG]   Included: antlr:antlr:jar:2.7.2
+[DEBUG]   Included: org.apache.struts:struts-taglib:jar:1.3.8
+[DEBUG]   Included: org.apache.struts:struts-tiles:jar:1.3.8
+[DEBUG]   Included: commons-collections:commons-collections:jar:3.2.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.4
+[DEBUG]   Included: commons-io:commons-io:jar:2.2
+[DEBUG]   Included: org.apache.httpcomponents:httpclient:jar:4.2.3
+[DEBUG]   Included: org.apache.httpcomponents:httpcore:jar:4.2.2
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.6
+[DEBUG]   Included: commons-logging:commons-logging:jar:1.1.1
+[DEBUG]   Included: log4j:log4j:jar:1.2.14
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:1.12.1
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.9
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.4
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.9
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.20
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-javadoc-plugin:2.10.3:javadoc from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-javadoc-plugin:2.10.3, parent: sun.misc.Launcher$AppClassLoader@409a44d6]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-javadoc-plugin:2.10.3:javadoc' with basic configurator -->
+[DEBUG]   (f) aggregate = false
+[DEBUG]   (f) applyJavadocSecurityFix = true
+[DEBUG]   (f) author = true
+[DEBUG]   (f) bootclasspathArtifacts = []
+[DEBUG]   (f) bottom = Copyright &#169; {inceptionYear}&#x2013;{currentYear} {organizationName}. All rights reserved.
+[DEBUG]   (f) breakiterator = false
+[DEBUG]   (f) debug = false
+[DEBUG]   (s) destDir = apidocs
+[DEBUG]   (f) detectJavaApiLink = true
+[DEBUG]   (f) detectLinks = false
+[DEBUG]   (f) detectOfflineLinks = true
+[DEBUG]   (f) docfilessubdirs = false
+[DEBUG]   (f) docletArtifact = groupId = 'null'
+artifactId = 'null'
+version = 'null'
+[DEBUG]   (f) docletArtifacts = []
+[DEBUG]   (f) doctitle = word2phrase 1.0.1 API
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) groups = []
+[DEBUG]   (f) includeDependencySources = false
+[DEBUG]   (f) includeTransitiveDependencySources = false
+[DEBUG]   (f) isOffline = false
+[DEBUG]   (f) javaApiLinks = {}
+[DEBUG]   (f) javadocDirectory = /Users/sweng/Desktop/w2p/src/main/javadoc
+[DEBUG]   (f) javadocOptionsDir = /Users/sweng/Desktop/w2p/target/javadoc-bundle-options
+[DEBUG]   (f) keywords = false
+[DEBUG]   (f) links = []
+[DEBUG]   (f) linksource = false
+[DEBUG]   (f) localRepository =       id: local
+      url: file:///var/root/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) nocomment = true
+[DEBUG]   (f) nodeprecated = false
+[DEBUG]   (f) nodeprecatedlist = false
+[DEBUG]   (f) nohelp = true
+[DEBUG]   (f) noindex = false
+[DEBUG]   (f) nonavbar = true
+[DEBUG]   (f) nooverview = false
+[DEBUG]   (f) nosince = false
+[DEBUG]   (f) notimestamp = false
+[DEBUG]   (f) notree = true
+[DEBUG]   (f) offlineLinks = []
+[DEBUG]   (f) old = false
+[DEBUG]   (f) outputDirectory = /Users/sweng/Desktop/w2p/target/apidocs
+[DEBUG]   (f) overview = /Users/sweng/Desktop/w2p/src/main/javadoc/overview.html
+[DEBUG]   (f) project = MavenProject: com.reputation.spark:word2phrase:1.0.1 @ /Users/sweng/Desktop/w2p/pom.xml
+[DEBUG]   (f) quiet = true
+[DEBUG]   (f) reactorProjects = [MavenProject: com.reputation.spark:word2phrase:1.0.1 @ /Users/sweng/Desktop/w2p/pom.xml]
+[DEBUG]   (f) remoteRepositories = [      id: sonatype-nexus-snapshots
+      url: https://oss.sonatype.org/content/repositories/snapshots
+   layout: default
+snapshots: [enabled => true, update => daily]
+ releases: [enabled => false, update => daily]
+,       id: central
+      url: https://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => daily]
+]
+[DEBUG]   (s) reportOutputDirectory = /Users/sweng/Desktop/w2p/target/site/apidocs
+[DEBUG]   (f) resourcesArtifacts = []
+[DEBUG]   (f) serialwarn = false
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@2f789178
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@73e5559a
+[DEBUG]   (f) show = protected
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) sourceDependencyCacheDir = /Users/sweng/Desktop/w2p/target/distro-javadoc-sources
+[DEBUG]   (f) splitindex = false
+[DEBUG]   (f) stylesheet = java
+[DEBUG]   (f) tagletArtifact = groupId = 'null'
+artifactId = 'null'
+version = 'null'
+[DEBUG]   (f) tagletArtifacts = []
+[DEBUG]   (f) taglets = []
+[DEBUG]   (f) tags = []
+[DEBUG]   (f) use = true
+[DEBUG]   (f) useStandardDocletOptions = true
+[DEBUG]   (f) validateLinks = false
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) version = true
+[DEBUG]   (f) windowtitle = word2phrase 1.0.1 API
+[DEBUG] -- end configuration --
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.008 s
+[INFO] Finished at: 2016-04-05T10:19:36-07:00
+[INFO] Final Memory: 20M/310M
+[INFO] ------------------------------------------------------------------------
