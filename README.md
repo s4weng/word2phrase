@@ -1,3 +1,5 @@
+# Word2Phrase
+
 This is the implementation of word2phrase (see section 4 Learning Phrases of http://arxiv.org/pdf/1310.4546.pdf).
 
 The estimator will take a dataframe as a training set, and produce a model that can be used with the transformer pipeline.
@@ -16,7 +18,7 @@ First run spark-shell and download the word2phrase mvn package:
 
 Import the algorithm and create the dataframe:
 
-  ```
+  ```scala
   import org.apache.spark.ml.feature.Word2Phrase
 
   val wordDataFrame = sqlContext.createDataFrame(Seq(
@@ -45,12 +47,15 @@ Import the algorithm and create the dataframe:
 
 We set the input and output column names and create the model (the estimator step, represented by the fit(wordDataFrame) function).
 
+  ```scala
   val t = new Word2Phrase().setInputCol("inputWords").setOutputCol("out")
 
   val model = t.fit(wordDataFrame)
+  ```
 
 We then use this model to transform our original dataframe sentences and view the results.  Unfortunately you can't see the entire row in the spark-shell, but in the out column it's clear that all instances of "new york" and "test drive" have been transformed into "new_york" and "test_drive".
-
+  
+  ```scala
   val bi_gram_data = model.transform(wordDataFrame)
 
   bi_gram_data.show()
@@ -80,7 +85,8 @@ We then use this model to transform our original dataframe sentences and view th
   |   19|use fun new york ...|use fun new_york ...|
   +-----+--------------------+--------------------+
   only showing top 20 rows
+  ```
 
 See the blog post for more details on word2phrase:
 
-tech.reputation.com
+http://tech.reputation.com/meaningless-words-to-useful-phrases-nlp/ ‎
