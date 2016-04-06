@@ -10,10 +10,13 @@ You can copy/paste this (be sure to include the full dataframe included in the r
 
 First run spark-shell and download the word2phrase mvn package:
 
+  ```scala
   spark-shell --packages com.reputation.spark.word2phrase.1.0.1
+  ```
 
 Import the algorithm and create the dataframe:
 
+  ```
   import org.apache.spark.ml.feature.Word2Phrase
 
   val wordDataFrame = sqlContext.createDataFrame(Seq(
@@ -38,6 +41,7 @@ Import the algorithm and create the dataframe:
   (1109, "fun ideone to play loaded like how ."),
   (1110, "fun york test drive awesome play times ideone new us media like follow .")
   )).toDF("label", "inputWords")
+  ```
 
 We set the input and output column names and create the model (the estimator step, represented by the fit(wordDataFrame) function).
 
