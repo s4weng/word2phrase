@@ -89,4 +89,4 @@ We then use this model to transform our original dataframe sentences and view th
 
 See the blog post for more details on word2phrase:
 
-http://tech.reputation.com/meaningless-words-to-useful-phrases-nlp/ ‎
+http://tech.reputation.com/meaningless-words-to-useful-phrases-in-spark-word2phrase/ ‎
