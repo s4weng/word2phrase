@@ -1,4 +1,4 @@
-# Word2Phrase
+# Word2Phrase in Apache Spark
 
 This is the implementation of word2phrase (see section 4 Learning Phrases of http://arxiv.org/pdf/1310.4546.pdf).
 
